@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
+    "cluster-dev": "pm2 start index.js -i max --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "vignesh bharathi",
@@ -13,6 +14,8 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.11"
+    "loadtest": "^8.2.0",
+    "nodemon": "^3.1.11",
+    "pm2": "^6.0.14"
   }
 }
